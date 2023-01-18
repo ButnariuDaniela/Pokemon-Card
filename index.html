@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pokemon Card Search</h1>
+      <div class="search-bar">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search by ID or Name..."
+        />
+        <button id="search">Search</button>
+      </div>
+    </header>
+    <main>
+      <div class="border-card">
+        <div class="card" id="card">
+          <div class="up-bar">
+            <div id="pokemon-name">Name</div>
+            <div id="pokemon-hp">HP</div>
+            <img id="icon" src="images/icon.png" alt="" />
+          </div>
+          <div class="image-zone">
+            <img id="pokemon-img" src="images/initial_image.jpg" alt="" />
+          </div>
+          <div class="dimensions-zone">
+            <div id="pokemon-type">Type:</div>
+            <div id="pokemon-height">Height:</div>
+            <div id="pokemon-weight">Weight:</div>
+          </div>
+          <div class="abilities-zone">
+            <div class="ability">
+              <h2 class="ability-name" id="first-ability">First Ability</h2>
+              <div class="description" id="first-description">Description</div>
+            </div>
+            <div class="ability">
+              <h2 class="ability-name" id="second-ability">Second Ability</h2>
+              <div class="description" id="second-description">Description</div>
+            </div>
+          </div>
+          <div class="stat-zone">
+            <div class="stat">
+              <img src="images/attack.png" alt="" />
+              <div id="attack">attack</div>
+            </div>
+            <div class="stat">
+              <img src="images/defence.png" alt="" />
+              <div id="defence">defence</div>
+            </div>
+            <div class="stat">
+              <img src="images/speed.png" alt="" />
+              <div id="speed">speed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
